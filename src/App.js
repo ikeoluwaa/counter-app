@@ -7,10 +7,6 @@ import { FiHash } from "react-icons/fi";
 import { FiChevronsDown } from "react-icons/fi";
 import { FiChevronDown } from "react-icons/fi";
 
-import { HiChevronDoubleDown } from "react-icons/hi";
-import { HiChevronDown } from "react-icons/hi";
-import { HiHashtag } from "react-icons/hi";
-
 export default function App() {
   const [num, setNum] = useState(0);
   let counts = num;
