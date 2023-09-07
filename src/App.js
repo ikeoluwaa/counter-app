@@ -1,11 +1,15 @@
 import { useState } from "react";
 // icons
-import { HiChevronUp } from "react-icons/hi";
-import { HiChevronDoubleUp } from "react-icons/hi";
+import { FiChevronUp } from "react-icons/fi";
+import { FiChevronsUp } from "react-icons/fi";
+import { FiRotateCcw } from "react-icons/fi";
+import { FiHash } from "react-icons/fi";
+import { FiChevronsDown } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
+
 import { HiChevronDoubleDown } from "react-icons/hi";
 import { HiChevronDown } from "react-icons/hi";
 import { HiHashtag } from "react-icons/hi";
-import { VscDebugRestart } from "react-icons/vsc";
 
 export default function App() {
   const [num, setNum] = useState(0);
@@ -38,24 +42,24 @@ export default function App() {
       <span className="score">{num}</span>
       <div className="buttons">
         <button onClick={handleIncrement}>
-          <HiChevronUp />
+          <FiChevronUp />
         </button>
         <button onClick={handleIncrement10}>
-          <HiChevronDoubleUp />
+          <FiChevronsUp />
         </button>
 
         <button onClick={handleReset}>
-          <VscDebugRestart />
+          <FiRotateCcw />
         </button>
         <button onClick={randomNum}>
-          <HiHashtag />
-        </button>
-        <button onClick={handleDecrement10}>
-          <HiChevronDoubleDown />
+          <FiHash />
         </button>
 
         <button onClick={handleDecrement}>
-          <HiChevronDown />
+          <FiChevronsDown />
+        </button>
+        <button onClick={handleDecrement10}>
+          <FiChevronDown />
         </button>
       </div>
     </div>
